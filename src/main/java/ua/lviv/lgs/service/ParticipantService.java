@@ -11,23 +11,23 @@ import ua.lviv.lgs.repo.ParticipantRepo;
 @Service
 public class ParticipantService {
 
-    @Autowired
-    private ParticipantRepo participantRepo;
+	@Autowired
+	private ParticipantRepo participantRepo;
 
-    public List<Participant> findAllParticipants() {
-	return participantRepo.findAllParticipants();
-    }
+	public List<Participant> findAllParticipants() {
+		return participantRepo.findAllParticipants();
+	}
 
-    public Participant findOne(int id) {
-	return participantRepo.findOne(id);
-    }
+	public Participant findOne(int id) {
+		return participantRepo.findOne(id);
+	}
 
-    public void save(Participant book) {
-	participantRepo.save(book);
-    }
+	public void save(Participant book) {
+		participantRepo.save(book);
+	}
 
-    public void delete(int id) {
-	participantRepo.delete(id);
-    }
+	public void delete(int id) {
+		participantRepo.delete(id);
+	}
 
 }
