@@ -53,4 +53,5 @@ public class ParticipantController {
 		req.setAttribute("mode", "PART_VIEW");
 		return "index";
 	}
+
 }
